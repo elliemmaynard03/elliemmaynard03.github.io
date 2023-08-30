@@ -1,0 +1,33 @@
+/* Structure */
+body {
+    background-color:azure;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 3px dotted red;
+    background-color: pink;
+}
+
+th {
+    background-color: green;
+}
+
+/* Typography */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+    background-color:yellow;
+}
+p {
+    color: blueviolet;
+}
+
+
+
