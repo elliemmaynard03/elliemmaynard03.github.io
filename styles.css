@@ -1,0 +1,44 @@
+/* Structure */
+body {
+    background-color:azure;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background: beige;
+    width:75%;
+    margin: auto;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none;
+    color: black;
+    padding:4px;
+}
+
+#main-nav a:hover {
+    color:pink;
+}
+
+
+/* Typography */
+
+#site-name {
+    color: rgb(244, 130, 149);
+    font-style: italic;
+}
+#name {
+    color:rgb(254, 186, 234);
+    font-style:normal;
+}
+#assignment-title {
+    color:rgb(254, 186, 234);
+    font-style:normal;
+}
+#description {
+    font-style:normal
+}
+
