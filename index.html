@@ -5,18 +5,42 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-    <div id="content"> 
-        <h1 id="site-name">CSCE 242: Wesite Applications</h1>
-        <h2 id="name">Ellie Maynard</h2>
-        <p id="description">Applying skills of web technology to website applications.</p>
-        <h2 id="assignment-title">Assignments</h2>
-        <nav id="main-nav">
-        <ol>
-            <li><a href="assignments/assignment1/index.html">Basic HTML</a></li>
-            <li><a href="assignments/assignment2/index.html">Basic CSS</a></li>
-            <li><a href="assignments/assignment3/index.html">Page Layout</a></li>
-        </ol>
-    </nav>
+         <header id="main-header">
+             <h2>Ellie Maynard</h2>
+             <h1>CSCE 242: Client-Server Computing</h1>
+             <h2 id="label">Assignments</h2>
+         </header>
+
+    <main id="main-content">
+        <div class="flex-container"> 
+            <section class="areaof3 column">
+                <nav id="main-nav">
+                <h3><a href="assignments/assignment1/index.html">Assignment 1: Basic HTML</a></h3>
+                <img src="images/assignment1screen.png"
+                width="300"
+                height="150">
+                <p>In this assignment we used basic HTML to create a main index.html website for holding all of our assignments.</p>
+                </nav>
+            </section>
+            <section class="areaof3 column">
+            <nav id="main-nav">
+            <h3><a href="assignments/assignment2/index.html">Assignment 2: Basic CSS</a></h3>
+                <img src="images/assignment2screen.png"
+                width="300"
+                height="150">
+                <p>In this assignment we used basic CSS to add design to our index.html page. This includes adding background color, padding, and borders.</p>
+                </nav>
+            </section>
+            <section class="areaof3 column">
+                <nav id="main-nav">
+                <h3><a href="assignments/assignment3/index.html">Assignment 3: Page Layout</a></h3>
+                <img src="images/assignment3screen.png"
+                width="300"
+                height="150">
+                <p>In this assignment, design was further developed by using flexbox and Media Queiry. </p>
+            </nav>
+        </section>
     </div>
+    </main>
     </body>
 </html>

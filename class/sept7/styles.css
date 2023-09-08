@@ -65,7 +65,8 @@ h1 {
 /* Larger Resolution */
 
 @media only screen and (min-width: 768px) {
-    .horizontal-nav ul {
+    .horizontal-nav ul, 
+    .flex-container {
     display: flex;
     }
 
@@ -87,8 +88,5 @@ h1 {
         flex:1;
     }
 
-    .flex-container {
-        
-    }
 
 }
