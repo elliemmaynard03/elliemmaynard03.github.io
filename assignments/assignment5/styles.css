@@ -1,0 +1,197 @@
+/* Structure */
+#main-header {
+    background-color: black;
+    margin-top: 0px;
+}
+#heading1,
+#heading2 {
+    position:relative;
+    padding:2%;
+}
+#area2 {
+    color:white;
+}
+#main-content {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+#main-footer {
+    background-color: maroon;
+    padding: 5px;
+}
+#label1, 
+#area2 {
+    color: white;
+}
+#label2 {
+    color:white;
+    margin:auto;
+    font-size: 300%;
+    padding:0%;
+}
+
+.column {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px; 
+}
+.area1,
+#area2,
+.middle1 {
+    background-color: maroon;
+}
+
+
+#area2 {
+    text-align: left;
+    color:white;
+    background-color:maroon;
+    padding: 0%;
+    font-size: 200%;
+
+   
+}
+
+#area7 {
+    background-color: white;
+}
+
+#area8 {
+    background-color: maroon;
+    text-align: center;
+    color: white;
+}
+
+#area11 {
+    background-color: maroon;
+    color:white;
+}
+#area4 {
+    background-color: maroon;
+    color:white;
+    padding: 5%;
+}
+#area5 {
+    background-color: black;
+    color:white;
+    padding: 5%;
+}
+#area6-image {
+    background-color: rgb(212, 211, 211);
+    padding:5%;
+}
+#area6 {
+    background-color: rgb(212, 211, 211);
+    padding:5%;
+    color: maroon;
+}
+
+#area10 {
+    background-color: rgba(1, 47, 56, 0.691);
+    color:white;
+}
+
+
+
+/*Typography*/
+#image-area1 {
+    margin: auto;
+}
+
+#main-footer p {
+    text-align: center;
+}
+#main-footer h2 {
+    text-align: center;
+}
+.nested {
+    text-align: center;
+}
+#label12-1 {
+    color:maroon;
+    padding:5%;
+}
+#area12 p {
+    padding-left: 5%;
+}
+#area13 {
+    background-color: maroon;
+}
+
+#area13- {
+    background-color: black;
+    color:white;
+}
+
+#label3 {
+    font-style: bold;
+    margin-left: 20%;
+    margin-right:20%;
+    margin-bottom: 2%;
+}
+#label4 {
+    margin-left: 20%;
+    margin-right:20%;
+}
+
+.title {
+    color:maroon;
+}
+
+#label12 {
+    background-color: maroon;
+    color:white;
+    padding:5%;
+    margin: 10%;
+}
+
+/* Navigations */
+#main-nav ul {
+    padding-left:0;
+}
+#main-nav li {
+    list-style-type: none;
+    padding: 15px;
+    background-color:maroon;
+    text-align:center;
+}
+
+#area6label {
+    color:maroon;
+    text-decoration: none;
+}
+#user-nav {
+    position: absolute;
+    top: 0%;
+    right:10%;
+}
+#main-nav a, #user-nav a {
+    text-decoration: none;
+    color:white;
+}
+#label {
+    text-align: center;
+    color: maroon;
+}
+
+
+
+    /* Larger Resolutions */
+@media (min-width: 900px) {
+    #main-nav ul,
+    .flex-container { 
+      display: flex;
+    }
+    #main-nav li, 
+    .area2, 
+    .middle1, 
+    .nested {
+        flex: 1; 
+    }
+    .area1 {
+        flex: 2;
+    }
+    .image1of3 {
+        margin: auto;
+    }
+}
