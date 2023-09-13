@@ -64,10 +64,12 @@ body {
         justify-content: flex end;
     }
 
+    .wrapping {
+        flex-wrap:wrap;
+    }
 
-    #areaof3 {
+    .areaof3 {
         flex:1;
-        
     }
 }
 
