@@ -22,7 +22,7 @@ body {
     border-radius: 5px; 
 }
 
-.areaof3 {
+.area {
     background-color: rgb(249, 234, 237);
     
 }
@@ -68,7 +68,7 @@ body {
         flex-wrap:wrap;
     }
 
-    .areaof3 {
+    .area {
         flex:1;
     }
 }
