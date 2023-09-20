@@ -10,6 +10,11 @@
     background-color: rgb(255, 120, 142);
 }
 
+#comment {
+    background-color: rgb(253, 236, 215);
+    padding:5px;
+    margin:10px;
+}
 
 .column {
     padding: 15px;

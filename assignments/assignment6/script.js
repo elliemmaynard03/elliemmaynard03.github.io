@@ -21,7 +21,7 @@ const writeComment = () => {
 
     const commentP = document.getElementById("comment");
 
-    commentP.innerHTML = "Product Name: " + productName  + " Comment: " + comment + " Product Rating: " + productRating + " User Name: " + userName;
+    commentP.innerHTML = "<section class='comment'>Product Name: " + productName  + " Comment: " + comment + " Product Rating: " + productRating + " User Name: " + userName;
 }
 
 window.onload = () => {
