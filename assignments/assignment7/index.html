@@ -15,15 +15,16 @@
                     <div></div>
                 </div>
                 <ul id="main-nav-items" class="hidden">
-                    <li><a href="#">Excercise 1</a></li>
-                    <li><a href="#">Excercise 2</a></li>
+                    <li><a href="#" id="show-1">Exercise 1</a></li>
+                    <li><a href="#" id="show-2">Exercise 2</a></li>
                 </ul>
             </nav>
         </header>
+
         <main id="main-content">
             <div class="flex-container">
-            <section class="sections">
-            <h1>Who's the Oldest</h1>
+            <section id="section1" class="hide">
+                <h1>Who's the Oldest</h1>
                 <p>Name 1:</p>
                 <input type="text" id="txt-name-1" />
                 <p>Age 1:</p>
@@ -39,13 +40,13 @@
                 <p><button id="age-button">Compare Ages</button></p>
                 <p id="comment-ages"></p>
             </section>
-            <section class="sections">
-            <h1>Fund Raising</h1>
-            <h2>Goal: 10,000.00</h2>
-            <p>Funds Raised:</p>
-                <input type="text" id="funds-raised" />
-                <p><button id="funds-button">Display</button></p>
-                <p id="display-funds"></p>
+            <section id="section2" class="hide">
+                <h1>Fund Raising</h1>
+                <h2>Goal: 10,000.00</h2>
+                <p>Funds Raised:</p>
+                    <input type="text" id="funds-raised" />
+                    <p><button id="display-button">Display</button></p>
+                    <p id="thermometer"><p>
                 </section>
             </div>
         </main>

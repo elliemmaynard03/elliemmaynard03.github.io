@@ -1,6 +1,26 @@
+const showExercise1 = () => {
+    document.getElementById("section1").classList.remove("hide");
+    document.getElementById("section2").classList.add("hide");
+}
+const showExercise2 = () => {
+    document.getElementById("section2").classList.remove("hide");
+    document.getElementById("section1").classList.add("hide");
+}
 const toggleNav = () => {
     document.getElementById("main-nav-items").classList.toggle("hidden");
 };
+const colorThermometer = () => {
+    const fundsRaised = document.getElementById("funds-raised").value;
+
+    if(fundsRaised == 5000) {
+        document.getElementById("thermometer").classList.add("color1");
+    } else if (fundsRaised > 5000) {
+        document.getElementById("thermometer").classList.add("color2");
+    }
+    else {
+        document.getElementById("thermometer").classList.add("color3");
+    }
+}
 
 const writeComment = () => {
     const nameOne = document.getElementById("txt-name-1").value;
@@ -12,28 +32,34 @@ const writeComment = () => {
     
     const commentP = document.getElementById("comment-ages");
    
-    if(ageOne.value > ageTwo.value)
-    {
-        if(ageTwo.value > ageThree.value) {
-            commentP.innerHTML = nameOne + " " +nameTwo + " " + nameThree;
-        }else if(ageThree.value > ageOne.value) {
-            commentP.innerHTML = nameThree + " " + nameOne + " " + nameTwo;
-        }else if(ageOne.value > ageThree.value) {
-            commentP.innerHTML = nameTwo + " " + nameThree + " " + nameOne;
+    if(ageOne > ageTwo && ageOne > ageThree) {
+        if(ageThree > ageTwo) {
+            commentP.innerHTML = nameOne + ", " +nameThree + ", " + nameTwo;
+        }else {
+            commentP.innerHTML = nameOne + ", " + nameTwo + ", " + nameThree;
         }
-
-    } else if(ageTwo.value > ageOne.value) {
-        if(ageTwo.value > ageThree && ageOne.value > ageThree.value) {
-            commentP.innerHTML = nameTwo + " " + nameOne + " " + nameThree;
-        } else if(ageTwo.value > ageThree && ageOne.value < ageThree.value) {
-            commentP.innerHTML = nameTwo + " " + nameThree + " " + nameTwo;
+    } else if(ageTwo > ageOne && ageTwo > ageThree) {
+        if(ageThree > ageOne) {
+            commentP.innerHTML = nameTwo + ", " + nameThree + ", " + nameOne;
+        } else {
+            commentP.innerHTML = nameTwo + ", " + nameOne + ", " + nameThree;
         }
+    } else if(ageThree > ageOne && ageThree > ageTwo) {
+        if(ageTwo > ageOne) {
+            commentP.innerHTML = nameThree + ", " + nameTwo + ", " + nameOne;
+        } else {
+            commentP.innerHTML = nameThree + ", " + nameOne + ", " + nameTwo;
+        }
+    } else {
+        commentP.innerHTML = "Error, invalid input."
     }
-    else if 
-
 
 }
 
 window.onload = () => {
     document.getElementById("nav-toggle").onclick = toggleNav;
-};
+    document.getElementById("show-1").onclick = showExercise1;
+    document.getElementById("show-2").onclick = showExercise2;
+    document.getElementById("age-button").onclick = writeComment;
+    document.getElementById("display-button").onclick = colorThermometer;
+} 

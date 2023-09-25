@@ -9,7 +9,45 @@ body {
     text-align: center;
 }
 
+
+.hide {
+    display: none;
+}
+
+#section1, #section2
+ {
+    text-align: center;
+}
+
+/* Gradients */
+#thermometer {
+    width: 150px;
+    height: 350px;
+    background:white;
+    margin: auto;
+}
+
+
+#thermometer.color1 {
+    background: linear-gradient(white 50%,red 50% 100%);
+}
+
+#thermometer.color2 {
+    background: linear-gradient(white 15%,red 15% 100%);
+}
+
+#thermometer.color3 {
+    background: linear-gradient(white 75%,red 75% 100%);
+}
+
+
+
+
 /* Typography */
+
+#main-nav.hide {
+    border-bottom: 4px solid rgb(253, 87, 115);
+}
 
 #main-nav-items {
     font-size: 1.23m;
@@ -19,6 +57,8 @@ body {
 .hidden {
     display: none;
 }
+
+
 
 /* Hamburger Menu */
 #nav-toggle div {
@@ -39,7 +79,6 @@ body {
     background-color: cornflowerblue;
     padding: 10px;
     margin: 2px 0;
-
 }
 
 #main-nav a {
@@ -53,8 +92,12 @@ body {
         display: flex;
      }
 
-     #main-nav-items li, 
-     .sections{
+     #section1, #section2
+    {
+        flex:1;
+     }
+
+     #main-nav-items li {
         flex: 1;
      }
 
@@ -62,8 +105,9 @@ body {
         border-bottom: 2px solid transparent;
      }
 
-     #main-nav-items a:hover {
+     #main-nav-items li:hover  {
             border-bottom: 2px solid coral;
+           
      }
 
      #nav-toggle {
