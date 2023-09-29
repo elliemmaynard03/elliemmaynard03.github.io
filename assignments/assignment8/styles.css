@@ -1,0 +1,65 @@
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(67, 67, 67);
+   
+}
+#section1, #section2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    
+}
+#section1 {
+    padding: 10px;
+    margin: 75px;
+    border-radius: 2px; 
+}
+#section2 {
+    margin: 15px;
+    border-radius: 2px; 
+    padding: 10px;
+   
+}
+
+/* Images */
+#walking-man{
+    --x: 10px;
+    position:relative;
+    left: var(--x);
+}
+/* Gradients */
+
+#thermometer {
+    --num:0%;
+    width: 150px;
+    height: 350px;
+    background:white;
+    margin: auto;
+    background: linear-gradient(0deg,  red var(--num),rgb(110, 109, 109) var(--num) 100%);
+}
+
+
+/* Typography */
+
+
+
+
+/* Hamburger Menu */
+
+
+/* Navigations */
+
+
+/*Larger Resolutions */
+@media(min-width:900px) {
+     .flex-container {
+        display: flex;
+     }
+
+     #section1, #section2
+    {
+        flex:1;
+     }
+
+}
