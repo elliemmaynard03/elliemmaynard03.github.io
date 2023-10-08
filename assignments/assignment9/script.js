@@ -5,16 +5,14 @@ const slide = () => {
 
     const changeQuote = setInterval(() => {
     var randomNumber = Math.floor(Math.random()*11);
-  count = (count + randomNumber) % quotes.length;
-  var newQuote = quotes[count];
-  result.innerHTML = newQuote;
-
-
+    count = (count + randomNumber) % quotes.length;
+    var newQuote = quotes[count];
+    result.innerHTML = newQuote;
     result.innerHTML = quotes[i];
-    i++;
-        
-        clearInterval(changeQuote);
-        i=0;
+    i++; 
+    
+    clearInterval(changeQuote);
+    i=0;
         
     
 }, 1000);
