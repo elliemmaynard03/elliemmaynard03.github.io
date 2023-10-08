@@ -111,4 +111,8 @@ h1 {
     .hide-small {
         display: block;
     }
+
+    #main-nav li {
+        flex: 1; 
+    }
 }

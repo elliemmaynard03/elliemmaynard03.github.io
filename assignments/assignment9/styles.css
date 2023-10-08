@@ -1,0 +1,76 @@
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(67, 67, 67);
+   
+}
+#section1, #section2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(86, 145, 227);
+    
+}
+#section1 {
+    padding: 50px;
+    margin: 75px;
+    border-radius: 2px; 
+}
+#section2 {
+    margin: 50px;
+    border-radius: 2px; 
+    padding: 10px;
+   
+}
+
+.hidden {
+    display:none;
+}
+
+.box {
+    height: 25px;
+    width: 300px;
+    margin: 0px;
+    background-color: black;
+}
+
+#section2 {
+    position:relative;
+}
+
+#gold {
+    position: absolute;
+    bottom:25px;
+    left:210px;
+    width:100px;
+    height:100px;
+}
+
+/* Images */
+
+/* Gradients */
+
+
+
+/* Typography */
+
+
+
+
+/* Hamburger Menu */
+
+
+/* Navigations */
+
+
+/*Larger Resolutions */
+@media(min-width:900px) {
+     .flex-container {
+        display: flex;
+     }
+
+     #section1, #section2 {
+        flex:1;
+     }
+    
+
+}
