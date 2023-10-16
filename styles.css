@@ -16,14 +16,24 @@ body {
     
 }
 
+.columnof2 {
+    padding:40px;
+    margin: auto;
+    border-radius: 2px; 
+    background-color: white;
+    text-align:center;
+}
+
 .column {
     padding: 15px;
     margin: 10px;
     border-radius: 5px; 
+    
 }
 
 .area {
     background-color: rgb(249, 234, 237);
+    
     
 }
 
