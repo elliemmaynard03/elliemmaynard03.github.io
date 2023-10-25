@@ -229,6 +229,21 @@ form {
     text-align:center;
 }
 
+/* Feedback*/
+.feedback {
+    background-color: rgb(253, 175, 188);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  
+  .feedback a {
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+  }
+
     /* Larger Resolutions */
 @media (min-width: 900px) {
 

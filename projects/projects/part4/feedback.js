@@ -1,62 +1,51 @@
-const getMovies = async () => {
-    const url = "https://portiaportia.github.io/json/movies.json";
+const getFeedback = async () => {
+    const url = "https://elliemmaynard03.github.io/projects/projects/part4/feedback.JSON";
   
     try {
       const response = await fetch(url);
-      return await response.json();
+      return response.json();
     } catch (error) {
       console.log(error);
     }
   };
   
-  const showMovies = async () => {
-    let movies = await getMovies();
-    console.log(movies);
-    let moviesSection = document.getElementById("movies-section");
+  const showFeedback = async () => {
+    
+    let allFeedback = await getFeedback();
+    console.log(allFeedback);
+    let feedbackSection = document.getElementById("feedback-section");
   
-    movies.forEach((movie) =>
-      moviesSection.append(getMovieItem(movie))
+    allFeedback.forEach((feedback) =>
+      feedbackSection.append(getFeedbackItem(feedback))
     );
   };
   
-  const getMovieItem = (movie) => {
-    let movieSection = document.createElement("section");
-    movieSection.classList.add("movie");
+  const getFeedbackItem = (feedback) => {
+    let feedbackSection = document.createElement("section");
+    feedbackSection.classList.add("feedback");
   
     let a = document.createElement("a");
-    movieSection.append(a);
+    feedbackSection.append(a);
   
     let h3 = document.createElement("h3");
-    h3.innerText = movie.title;
+    h3.innerText = feedback.name;
     a.append(h3);
   
     
-    let director = document.createElement("p");
-    director.textContent = `${movie.director}`;
-    a.append(director);
+    let brand = document.createElement("p");
+    brand.textContent = `${feedback.brand}`;
+    a.append(brand);
 
-    let actors = document.createElement("p");
-    actors.textContent = `${movie.actors}`;
-    a.append(actors);
+    let type = document.createElement("p");
+    type.textContent = `${feedback.type}`;
+    a.append(type);
 
-    let year = document.createElement("p");
-    year.textContent = `${movie.year}`;
-    a.append(year);
+    let rating = document.createElement("p");
+    rating.textContent = `${feedback.rating}`;
+    a.append(rating);
 
-    let genres = document.createElement("p");
-    genres.textContent = `${movie.genres}`;
-    a.append(genres);
-
-    let description = document.createElement("p");
-    description.textContent = `${movie.description}`;
-    a.append(description);
-
-    let image = document.createElement("img");
-    a.append(image);
-    image.src = "https://portiaportia.github.io/json/"+ movie.img;
-
-    return movieSection;
+    return feedbackSection;
   };
   
   
-  window.onload = () => showMovies();
+  showFeedback();
