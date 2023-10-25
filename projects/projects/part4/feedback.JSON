@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Jane Smith",
+        "Brand": "Skims",
+        "Type": "Clothing",
+        "Rating": "10/10"
+    },
+    {
+        "Name": "Allison Johnson",
+        "Brand": "Rhode Skin",
+        "Type": "Product",
+        "Rating": "8/10"
+    },
+    {
+        "Name": "Isabella White",
+        "Brand": "Charlotte Tilbury",
+        "Type": "Makeup",
+        "Rating": "9/10"
+    },
+    {
+        "Name": "Mary Goldstein",
+        "Brand": "Pacsun",
+        "Type": "Clothing",
+        "Rating": "7/10"
+    },
+    {
+        "Name": "Jessica Atkins",
+        "Brand": "Cerave",
+        "Type": "Product",
+        "Rating": "10/10"
+    }
+]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SemesterProject</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header id="main-header">
+         <h1 id="title">Ellie Maynard's Store Front</h1>
+            <nav id="main-nav">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="'hide-small">
+                    <li><a href="../../projects/part4/index.html">Home</a></li>
+                    <li><a href="../../projects/part4/clothing.html">Clothing</a></li>
+                    <li><a href="../../projects/part4/products.html">Products</a></li>
+                    <li><a href="../../projects/part4/jewelry.html">Jewelry</a></li>
+                    <li><a href="../../projects/part4/feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <div class="flex-container">
+                <section class="info-section columns">
+                    <section>
+                        <h4>Feedback</h4>
+                        <h4><a href="../../projects/part4/feedback-results.html">All Feedback Results</a></h4>
+                        <p>
+                            Let us know which clothes, products, and jewelry you liked best to have it featured on this week's homepage!
+                        </p>
+                        <form id="form-feedback">
+                            <p>
+                                <label for="feeback-name">Name:</label>
+                                <input type="text" id="feedback-name" name="feedback-name" required />
+                            </p>
+                            <p>
+                                <label for="brand">Brand:</label>
+                                <input type="text" id="brand" required />
+                            </p>
+                            
+                            <p>
+                                <input type="radio" name="type" value="clothes" />
+                                <label for="clothes" class="inline">Clothes</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="type" value="product" />
+                                <label for="product" class="inline">Product</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="type" value="jewelry" />
+                                <label for="jewelry" class="inline">Jewelry</label>
+                            </p>
+                            <p>
+                                <label for="rating">Rating (1 lowest)</label>
+                                <select name="rating">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </p>
+            
+                            <p>
+                                <input type="checkbox" name="terms" /><label for="terms" class="inline">I agree to the terms.</label
+                        >
+                      </p>
+            
+                      <p>
+                        <button type="submit">Submit</button>
+                      </p>
+                    </form>
+                  </section>
+                  <section id="results" class="hidden">
+                    <h4>Results</h4>
+                    <p>
+                      Your feedback has been added to the system, someone will
+                      contact you shortly.
+                    </p>
+                  </section>
+                  <section class="info-section">
+                    <h3>Contact Ellie</h3>
+                    <div class="columns">
+                      <form
+                        id="contact-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                      >
+                        <input
+                          type="hidden"
+                          name="access_key"
+                          value="9b9f6c24-86a3-430d-af63-f3f7e156a9f1"
+                        />
+              
+                        <p>
+                          <label for="name">Name:</label>
+                                  <input id="name" type="text" placeholder="first and last" name="name" required />
+                              </p>
+                              <p>
+                                  <label for="email">Email:</label>
+                                  <input id="email" type="email" name="email" required />
+                              </p>
+                              <p>
+                                  <label for="message">Message:</label>
+                                  <textarea id="message" name="message" required></textarea>
+                              </p>
+                              <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                              <input type="hidden" name="subject" value="Contact from Ellie's Store Front" />
+                              <input type="hidden" name="from_name" value="My Website" />
+              
+                              <p>
+                                  <button type="submit">Submit Form</button>
+                              </p>
+              
+                              <p id="result"></p>
+                          </form>
+                          </div>
+                      </section>
+                </section>
+            </div>
+            <script src="contactme.js"></script>
+            <script src="form.js"></script>
+        </body>
+    </html>
