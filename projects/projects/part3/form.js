@@ -27,11 +27,11 @@
 
     const feedbackBrand = document.createElement("p");
     feedbackBrand.innerHTML = form.elements["brand"].value;
-    info.append(brand);
-
-    const rating = document.createElement("p");
-    rating.innerHTML = form.elements("rating").value;
-    info.append(rating);
+    info.append(feedbackBrand);
+    
+    const feedbackRating = document.createElement("p");
+    feedbackRating.innerHTML = form.elements("rating").value;
+    info.append(feedbackRating);
 
 
     return info;
@@ -48,6 +48,5 @@ const getRadioValue = (radioName) => {
     return "";
 };
 
-window.onload = () => {
+
     document.getElementById("form-feedback").onsubmit = submitFeedback;
-};
