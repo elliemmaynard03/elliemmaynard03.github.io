@@ -28,20 +28,20 @@ const getFeedback = async () => {
     feedbackSection.append(a);
   
     let h3 = document.createElement("h3");
-    h3.innerText = feedback.name;
+    h3.innerText = feedback.Name;
     a.append(h3);
   
     
     let brand = document.createElement("p");
-    brand.textContent = `${feedback.brand}`;
+    brand.textContent = "Brand: "+`${feedback.Brand}`;
     a.append(brand);
 
     let type = document.createElement("p");
-    type.textContent = `${feedback.type}`;
+    type.textContent = "Type: "+`${feedback.Type}`;
     a.append(type);
 
     let rating = document.createElement("p");
-    rating.textContent = `${feedback.rating}`;
+    rating.textContent = "Rating: "+`${feedback.Rating}`;
     a.append(rating);
 
     return feedbackSection;

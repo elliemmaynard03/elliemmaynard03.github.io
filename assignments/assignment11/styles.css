@@ -15,14 +15,11 @@
   
   .movie {
     background-color: cornflowerblue;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     margin: 5px;
   }
   
-  .movie:hover {
-    background-color: coral;
-  }
   
   .movie a {
     color: white;
@@ -30,6 +27,17 @@
     text-decoration: none;
   }
 
+  .image {
+    padding: 50px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transition: transform .2s; /* Animation */
+  }
+  
+  .image:hover {
+    transform: scale(1.5);
+  }
   
   
   /* Larger Resolutions */

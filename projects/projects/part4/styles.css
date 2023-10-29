@@ -94,6 +94,28 @@
     margin: auto;
 }
 
+.json-results {
+    border-radius: 5px;
+    text-decoration:none;
+    color:white;
+    list-style-type: none;
+    padding: 2px;
+    background-color:rgb(253, 175, 188);
+}
+.all-feedback-results a {
+    border-radius: 5px;
+    text-decoration:none;
+    color:white;
+    list-style-type: none;
+    padding: 2px;
+    background-color:rgb(253, 175, 188);
+    text-align:center;
+    
+}
+.all-feedback-results a:hover {
+   color:rgb(251, 219, 224)
+}
+
 /*Typography*/
 
 #title {
@@ -201,6 +223,10 @@ form {
 #main-nav a {
     text-decoration: none;
     color:white;
+}
+
+#main-nav a:hover {
+    color:rgb(251, 219, 224)
 }
 
 #links  {
