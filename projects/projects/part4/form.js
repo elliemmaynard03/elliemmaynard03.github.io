@@ -2,20 +2,6 @@
     const submitFeedback = (e) => {
     e.preventDefault();
     
-    
-    
-    
-    // const form = document.getElementById("form-feedback");
-    // const feedbackName = form.elements["feedback-name"].value;
-    // const feedbackBrand = form.elements["brand"].value;
-    // const rating = form.elements["rating"].value;
-    // const termsChecked = form.elements["terms"].checked;
-
-    // console.log(feedbackName);
-    // console.log(feedbackBrand);
-    // console.log(getRadioValue("type"));
-    // console.log(rating);
-    // console.log(termsChecked);
 
     document.getElementById("results").classList.remove("hidden");
     const form = document.getElementById("form-feedback");
